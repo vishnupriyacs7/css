@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration Example</title>
+    <style>
+        .underline {
+            text-decoration : underline red dotted 2px; 
+        }
+        .overline {
+            text-decoration-line: overline;
+            Text-decoration-style :double;
+	    text-decoration-color : blue;
+            text-decoration-thickness : 3px;
+        }
+        .line-through {
+            text-decoration-line: line-through;
+	    Text-decoration-style :dotted;
+        }
+        .underline-overline {
+            text-decoration-line: underline overline;
+	    Text-decoration-style :dashed;
+        }
+        .none {
+            text-decoration-line: none;
+        }
+    </style>
+</head>
+<body>
+    <p class="underline">This text is underlined.</p>
+    <p class="overline">This text has an overline.</p>
+    <p class="line-through">This text has a line through it.</p>
+    <p class="underline-overline">This text is both underlined and overlined.</p>
+    <p class="none">This text has no decoration.</p>
+</body>
+</html>
