@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Break Example</title>
+    <style>
+        .normal {
+            word-break: normal;
+        }
+        .break-all {
+            word-break: break-all;
+        }
+        .keep-all {
+            word-break: keep-all;
+        }
+        .break-word {
+            word-break: break-word;
+        }
+        .example {
+            width: 200px;
+            border: 1px solid #000;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="example normal">
+       normal- This is a verylongwordthatneeds-tobebroken.
+    </div>
+    <div class="example break-all">
+      break all  This is a verylongwordthatneedstobebroken.
+    </div>
+    <div class="example keep-all">
+     keep all   This is a verylongwordthatneeds-tobebroken.
+    </div>
+    <div class="example break-word">
+       break word This is a verylongwordthatneedstobebroken.
+    </div>
+</body>
+</html>

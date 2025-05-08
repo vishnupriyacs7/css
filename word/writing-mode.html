@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Mode Example</title>
+    <style>
+        .horizontal {
+            writing-mode: horizontal-tb;
+            border: 1px solid #000;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .vertical-rl {
+            writing-mode: vertical-rl;
+            border: 1px solid #000;
+            padding: 5px;
+            margin-bottom: 10px;
+	    width:300px;
+        }
+        .vertical-lr {
+            writing-mode: vertical-lr;
+            border: 1px solid #000;
+            padding: 5px;
+            margin-bottom: 10px;
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="horizontal">
+        This text is laid out horizontally.
+    </div>
+    <div class="vertical-rl">
+        This text is laid out vertically from right to left.
+    </div>
+    <div class="vertical-lr">
+        This text is laid out vertically from left to right.
+    </div>
+</body>
+</html>
