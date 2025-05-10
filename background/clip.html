@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Clip Example</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            border: 10px solid #000;
+            padding: 20px;
+            background: url('https://via.placeholder.com/200') no-repeat center;
+            margin-bottom: 20px;
+        }
+        .border-box {
+            background-clip: border-box;
+        }
+        .padding-box {
+            background-clip: padding-box;
+        }
+        .content-box {
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box border-box">border-box</div>
+    <div class="box padding-box">padding-box</div>
+    <div class="box content-box">content-box</div>
+</body>
+</html>

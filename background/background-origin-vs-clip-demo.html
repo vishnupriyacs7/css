@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>background-origin vs background-clip</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 30px;
+      background-color: #fff;
+    }
+
+    h2 {
+      margin-top: 50px;
+    }
+
+    .demo-box {
+      width: 300px;
+      height: 150px;
+      margin-bottom: 40px;
+      border: 10px solid #333;
+      padding: 20px;
+      background-image: url("C:/Users/HP/OneDrive/Pictures/2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: green;
+    }
+
+    .origin-padding_clip-padding {
+      background-origin: padding-box;
+      background-clip: padding-box;
+    }
+
+    .origin-border_clip-content {
+      background-origin: border-box;
+      background-clip: content-box;
+    }
+
+    .origin-content_clip-border {
+      background-origin: content-box;
+      background-clip: border-box;
+    }
+
+    .label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Background-Origin vs Background-Clip</h1>
+
+  <div class="label">Origin: padding-box | Clip: padding-box</div>
+  <div class="demo-box origin-padding_clip-padding">
+    The image starts from padding edge and is visible in padding+content.
+  </div>
+
+  <div class="label">Origin: border-box | Clip: content-box</div>
+  <div class="demo-box origin-border_clip-content">
+    The image starts from border edge but only shows in content area.
+  </div>
+
+  <div class="label">Origin: content-box | Clip: border-box</div>
+  <div class="demo-box origin-content_clip-border">
+    The image starts from content edge but is visible across all (border+padding+content).
+  </div>
+
+</body>
+</html>

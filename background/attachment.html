@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Attachment Example</title>
+    <style>
+        body {
+            height: 200vh; /* Make the page tall enough to scroll */
+	    
+        }
+        .cover {
+            
+             background-image: url('image.jpg') ;
+	     background-size : cover;
+	     background-repeat:no-repeat;
+	     width : 200px;
+             height :200px;
+	     
+                       
+                    }
+	.contain {
+            
+             background-image: url('image.jpg') ;
+	     background-size : contain;
+	     background-repeat:no-repeat;
+	     width : 200px;
+             height :200px;
+	     
+                       
+                    }
+.auto {
+            
+             background-image: url('image.jpg') ;
+	     background-size : auto;
+	     background-repeat:no-repeat;
+	     width : 200px;
+             height :200px;
+	     
+                       
+                    }
+
+           </style>
+</head>
+<body>
+    <div class="cover">This background scrolls with the page.</div> <br><br>
+<div class="contain">This background scrolls with the page.</div><br><br>
+<div class="auto">This background scrolls with the page.</div>
+
+
+    </body>
+</html>

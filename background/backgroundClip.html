@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Clip Example</title>
+    <style>
+        .border-box {
+            background: lightblue;
+            border: 10px dashed black;
+            padding: 15px;
+            background-clip: border-box;
+        }
+        .padding-box {
+            background: lightgreen;
+            border: 10px dashed black;
+            padding: 15px;
+            background-clip: padding-box;
+        }
+        .content-box {
+            background: lightcoral;
+            border: 10px solid black;
+            padding: 15px;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="border-box">
+        Background extends behind the border.
+    </div>
+    <div class="padding-box">
+        Background extends to the inside edge of the border.
+    </div>
+    <div class="content-box">
+        Background extends to the edge of the content box.
+    </div>
+</body>
+</html>
