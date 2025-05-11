@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ID, Class, and Attribute Selectors</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+/* ID Selector */
+#main-heading {
+    color: #4CAF50;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Class Selector */
+.highlight {
+    background-color: #FFFFE0;
+    padding: 10px;
+    border: 1px solid #CCC;
+}
+
+/* Another ID Selector */
+#unique-paragraph {
+    font-weight: bold;
+    color: #FF5722;
+    margin-top: 20px;
+}
+
+/* Attribute Selector (for the title attribute) */
+a[title] {
+    text-decoration: none;
+    color: #008CBA;
+}
+
+/* Attribute Selector for input[type="submit"] */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+<body>
+    <h1 id="main-heading">CSS Selectors Example</h1>
+
+    <div class="container">
+        <p class="highlight">This paragraph is styled with a class.</p>
+        <p class="highlight">Another paragraph with the same class.</p>
+        <p id="unique-paragraph">This paragraph is styled with an ID.</p>
+        <a href="#" title="Link to nowhere">Hover over this link to see an attribute-based style.</a>
+    </div>
+
+    <div class="container">
+        <input type="text" placeholder="Type something...">
+        <input type="submit" value="Submit">
+    </div>
+</body>
+</html>
