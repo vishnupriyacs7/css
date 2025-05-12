@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled To-Do List</title>
+    <style>
+        /* Background and Page Font */
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Heading Style */
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 36px;
+            color: #005f73;
+            text-align: center;
+            text-shadow: 2px 2px 4px #94d2bd;
+        }
+
+        /* To-Do List Container */
+        .todo-container {
+            width: 300px;
+            margin: 0 auto;
+            background-color: #e1f7d5;
+            border: 2px solid #72b3a1;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* List Styling */
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color: #fffcf2;
+            border-left: 5px solid #f4a261;
+            border-radius: 5px;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        /* Highlight Important Task */
+        .important {
+            background-color: #f4a261;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Completed Task */
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My To-Do List</h1>
+
+    <div class="todo-container">
+        <ul>
+            <li class="important">Finish Homework</li>
+            <li>Read a Book</li>
+            <li class="completed">Exercise for 30 minutes</li>
+            <li>Prepare for Presentation</li>
+            <li class="important">Call Mom</li>
+        </ul>
+    </div>
+
+</body>
+</html>
